@@ -1,5 +1,5 @@
 
-# :flying_saucer: Zumo + Arduino
+# :flying_saucer: Zumo + Arduino IDA
 <br>
 <h1 Name="Tisch">:notebook_with_decorative_cover: Inhaltsverzeichnis</h1>
 <h4>1. Introdaction</h4>
@@ -59,7 +59,7 @@ Emergency Protocols: Establish emergency protocols to follow in case of system f
 
 <h3>:snail:Hidden Limitations of the Zumo Robot System</h3>
 
-### Here are some of these potential limitations :snail:<br>
+#### Here are some of these potential limitations :snail:<br>
 **1.	Processing Power and Memory:**
 Limited Processing Capability: The Arduino board, while capable, has limited processing power compared to more advanced microcontrollers or single-board computers. Complex algorithms and real-time processing may be challenging to implement.
 Memory Constraints: Arduino boards have limited RAM and flash memory, which can restrict the size and complexity of programs that can be run.<br>
@@ -161,12 +161,15 @@ required libraries.<br>
 ### :point_right: Set Up WLAN Connection and Proxy:<br>
 WLAN Configuration: Ensure your Arduino board is correctly connected to the WLAN. This is usually done in the code by providing the WLAN SSID and password.<br>
 
->#include <WiFi.h> const char* ssid = "your_SSID"; const char* password = "your_PASSWORD"; void setup() { Serial.begin(115200); WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi..."); } Serial.println("Connected to WiFi"); } void loop() { // Your code here }
+```
+#include <WiFi.h> const char* ssid = "your_SSID"; const char* password = "your_PASSWORD"; void setup() { Serial.begin(115200); WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi..."); } Serial.println("Connected to WiFi"); } void loop() { // Your code here }
+```
 
 Using an HTTPS Proxy: If a proxy is required for the HTTPS connection, you need to configure the proxy settings in your code. Here is an example:<br>
 
->#include <WiFiClientSecure.h> const char* proxy_host = "your_proxy_host"; const int proxy_port = your_proxy_port; WiFiClientSecure client; void setup() { Serial.begin(115200); WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi..."); } Serial.println("Connected to WiFi"); client.setInsecure(); // Optional, depending on security requirements if (!client.connect(proxy_host, proxy_port)) { Serial.println("Proxy connection failed"); return; } Serial.println("Connected to proxy"); } void loop() { // Your code here, e.g., sending an HTTPS request through the proxy }
-
+```
+#include <WiFiClientSecure.h> const char* proxy_host = "your_proxy_host"; const int proxy_port = your_proxy_port; WiFiClientSecure client; void setup() { Serial.begin(115200); WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi..."); } Serial.println("Connected to WiFi"); client.setInsecure(); // Optional, depending on security requirements if (!client.connect(proxy_host, proxy_port)) { Serial.println("Proxy connection failed"); return; } Serial.println("Connected to proxy"); } void loop() { // Your code here, e.g., sending an HTTPS request through the proxy }
+```
 ### :point_right: Further Configuration and Testing:<br>
 
 Ensure that the `server` the Zumo Robot needs to communicate with is running and reachable. Test the basic functionality of the robot and ensure it responds correctly to control commands.
