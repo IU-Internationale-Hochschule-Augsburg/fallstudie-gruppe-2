@@ -175,8 +175,8 @@ Using an HTTPS Proxy: If a proxy is required for the HTTPS connection, you need 
 Ensure that the `server` the Zumo Robot needs to communicate with is running and reachable. Test the basic functionality of the robot and ensure it responds correctly to control commands.
 
 >[!Note]
->Useful Resources and Guides:
-Arduino Getting Started Guide: Arduino Getting Started
-GitHub Getting Started Guide: GitHub Documentation
-WiFi Library Documentation for Arduino: Arduino WiFi Library
+>Useful Resources and Guides:<br>
+Arduino Getting Started Guide: Arduino Getting Started<br>
+GitHub Getting Started Guide: GitHub Documentation<br>
+WiFi Library Documentation for Arduino: Arduino WiFi Library<br>
 
