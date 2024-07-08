@@ -5,6 +5,7 @@
 <h4>1. Introdaction</h4>
 <h4>2. Front User</h4>
 <h4>3. Technical documentation</h4>
+<h4>4. Steps to Get Started</h4>
 <br>
 <br>
 
@@ -140,34 +141,39 @@ Programming Interface: Connects the Arduino board to a computer for code transfe
 WLAN:<br>
 Network Communication: Allows the robot to communicate over a Wi-Fi network, enabling remote control, data logging, and integration with web services.<br>
 
-# Steps to Get Started:
-## 1.	Check and Install Prerequisites:
-Arduino IDE: Ensure you have the Arduino IDE installed on your computer. You can download it from here.
-Git: Ensure Git is installed on your computer. You can download it from here.
-## 2. Pull Code from GitHub:
-Open a terminal (or Git Bash) and clone the repository:git clone <repository-url>
-Navigate to the cloned directory: cd <repository-directory>
-## Set Up Arduino IDE:
-•	Install Libraries: If the repository requires specific Arduino libraries, ensure you install them. In the Arduino IDE, go to Sketch -> Include Library -> Manage Libraries and search for the required libraries.<br>
-•	Select Board and Port: Connect your Arduino board to the computer and select the appropriate board and port in the Arduino IDE. You can do this under Tools -> Board and Tools -> Port.<br>
-## Upload Code to the Arduino Board:
-•	Open the .ino file of the project in the Arduino IDE.<br>
+# :sparkles: 4. Steps to Get Started<br>
+
+### :point_right: 1. Check and Install Prerequisites:<br>
+Ensure you have the `Arduino IDE` installed on your computer. You can download it from here [Arduino IDE](https://www.arduino.cc/en/software).<br>
+Ensure `GitHub Desktop` is installed on your computer. You can download it from here [GitHub](https://github.com/apps/desktop).
+### :point_right: 2. Pull Code from GitHub:<br>
+Open a  Repository `fallstudie-gruppe-2` go to `Code` and clone the repository `<repository-url>`. 
+Navigate to the cloned directory: `cd <repository-directory>`
+### :point_right: Set Up Arduino IDE:
+•	Install `Libraries:` If the repository requires specific Arduino libraries, ensure you install them. In the Arduino IDE, go to `Sketch` -> `Include Library` -> `Manage Libraries` and search for the
+required libraries.<br>
+•	Select `Board and Port:` Connect your Arduino board to the computer and select the appropriate board and port in the Arduino IDE. You can do this under `Tools` -> `Board and Tools` -> `Port`.<br>
+### :point_right: Upload Code to the Arduino Board:
+•	Open the `.ino file` of the project in the Arduino IDE.<br>
 •	Verify the code for errors by clicking the checkmark icon.<br>
 •	Upload the code to the board by clicking the arrow icon.<br>
-## Set Up WLAN Connection and Proxy:
-WLAN Configuration: Ensure your Arduino board is correctly connected to the WLAN. This is usually done in the code by providing the WLAN SSID and password.
-#include <WiFi.h> const char* ssid = "your_SSID"; const char* password = "your_PASSWORD"; void setup() { Serial.begin(115200); WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi..."); } Serial.println("Connected to WiFi"); } void loop() { // Your code here }
-Using an HTTPS Proxy: If a proxy is required for the HTTPS connection, you need to configure the proxy settings in your code. Here is an example:
-#include <WiFiClientSecure.h> const char* proxy_host = "your_proxy_host"; const int proxy_port = your_proxy_port; WiFiClientSecure client; void setup() { Serial.begin(115200); WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi..."); } Serial.println("Connected to WiFi"); client.setInsecure(); // Optional, depending on security requirements if (!client.connect(proxy_host, proxy_port)) { Serial.println("Proxy connection failed"); return; } Serial.println("Connected to proxy"); } void loop() { // Your code here, e.g., sending an HTTPS request through the proxy }
 
-4.	Further Configuration and Testing:
-Server Connection: Ensure that the server the Zumo Robot needs to communicate with is running and reachable.
-Conduct Tests: Test the basic functionality of the robot and ensure it responds correctly to control commands.
-Useful Resources and Guides:
+### :point_right: Set Up WLAN Connection and Proxy:<br>
+WLAN Configuration: Ensure your Arduino board is correctly connected to the WLAN. This is usually done in the code by providing the WLAN SSID and password.<br>
+
+>#include <WiFi.h> const char* ssid = "your_SSID"; const char* password = "your_PASSWORD"; void setup() { Serial.begin(115200); WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi..."); } Serial.println("Connected to WiFi"); } void loop() { // Your code here }
+
+Using an HTTPS Proxy: If a proxy is required for the HTTPS connection, you need to configure the proxy settings in your code. Here is an example:<br>
+
+>#include <WiFiClientSecure.h> const char* proxy_host = "your_proxy_host"; const int proxy_port = your_proxy_port; WiFiClientSecure client; void setup() { Serial.begin(115200); WiFi.begin(ssid, password); while (WiFi.status() != WL_CONNECTED) { delay(1000); Serial.println("Connecting to WiFi..."); } Serial.println("Connected to WiFi"); client.setInsecure(); // Optional, depending on security requirements if (!client.connect(proxy_host, proxy_port)) { Serial.println("Proxy connection failed"); return; } Serial.println("Connected to proxy"); } void loop() { // Your code here, e.g., sending an HTTPS request through the proxy }
+
+### :point_right: Further Configuration and Testing:<br>
+
+Ensure that the `server` the Zumo Robot needs to communicate with is running and reachable. Test the basic functionality of the robot and ensure it responds correctly to control commands.
+
+>[!Note]
+>Useful Resources and Guides:
 Arduino Getting Started Guide: Arduino Getting Started
 GitHub Getting Started Guide: GitHub Documentation
 WiFi Library Documentation for Arduino: Arduino WiFi Library
 
-
-    </body>
-</html>
