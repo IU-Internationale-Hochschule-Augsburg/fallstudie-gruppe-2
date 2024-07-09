@@ -170,13 +170,13 @@ Ensure `GitHub Desktop` is installed on your computer. You can download it from 
 Open a  Repository `fallstudie-gruppe-2` go to `Code` and clone the repository `<repository-url>`. 
 Navigate to the cloned directory: `cd <repository-directory>`
 ### :point_right: Set Up Arduino IDE:
-•	Install `Libraries:` If the repository requires specific Arduino libraries, ensure you install them. In the Arduino IDE, go to `Sketch` -> `Include Library` -> `Manage Libraries` and search for the
+Install `Libraries:` If the repository requires specific Arduino libraries, ensure you install them. In the Arduino IDE, go to `Sketch` -> `Include Library` -> `Manage Libraries` and search for the
 required libraries.<br>
-•	Select `Board and Port:` Connect your Arduino board to the computer and select the appropriate board and port in the Arduino IDE. You can do this under `Tools` -> `Board and Tools` -> `Port`.<br>
+Select `Board and Port:` Connect your Arduino board to the computer and select the appropriate board and port in the Arduino IDE. You can do this under `Tools` -> `Board and Tools` -> `Port`.<br>
 ### :point_right: Upload Code to the Arduino Board:
-•	Open the `.ino file` of the project in the Arduino IDE.<br>
-•	Verify the code for errors by clicking the checkmark icon.<br>
-•	Upload the code to the board by clicking the arrow icon.<br>
+Open the `.ino file` of the project in the Arduino IDE.<br>
+Verify the code for errors by clicking the checkmark icon.<br>
+Upload the code to the board by clicking the arrow icon.<br>
 
 ### :point_right: Set Up WLAN Connection and Proxy:<br>
 WLAN Configuration: Ensure your Arduino board is correctly connected to the WLAN. This is usually done in the code by providing the WLAN SSID and password.<br>
