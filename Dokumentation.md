@@ -1,5 +1,5 @@
 
-# :flying_saucer: Zumo + Arduino IDA
+# :flying_saucer: Zumo + Arduino 
 <br>
 <h1 Name="Tisch">:notebook_with_decorative_cover: Inhaltsverzeichnis</h1>
 <h4>1. Introdaction</h4>
