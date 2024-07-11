@@ -10,6 +10,7 @@
 <h4>5. Steps to Get Started</h4>
 <br>
 <br>
+
 ## 1. Introduction<br>
 This documentation is intended to serve as a comprehensive guide. Here you will find all the information you need to find your way around our software and use it successfully.
 Our documentation is divided into different sections, which include user journey, technical documentation, Glossary and Repositories.
