@@ -159,10 +159,13 @@ Programming Interface: Connects the Arduino board to a computer for code transfe
 WLAN:<br>
 Network Communication: Allows the robot to communicate over a Wi-Fi network, enabling remote control, data logging, and integration with web services.<br>
 
-<h4>4. Server</h4>
+## 4. Server</h4> ##
 
+We used Visual Studio Code to connect to `https://api.jsonbin.io/v3/b/6662fa7de41b4d34e4ffd938` server. Make sure you have a `X-Master-Key` and `X-Access-Key`.<br>
+<br>
+<br>
 
-# :sparkles: 5. Steps to Get Started<br>
+## :sparkles: 5. Steps to Get Started <br>
 
 ### :point_right: 1. Check and Install Prerequisites:<br>
 Ensure you have the `Arduino IDE` installed on your computer. You can download it from here [Arduino IDE](https://www.arduino.cc/en/software).<br>
