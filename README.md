@@ -3,11 +3,11 @@
 
 <br>
 <h1 Name="Tisch">:notebook_with_decorative_cover: Inhaltsverzeichnis</h1>
-<h4>1. Introdaction</h4>
-<h4>2. Front User</h4>
-<h4>3. Technical documentation</h4>
-<h4>4. Server</h4>
-<h4>5. Steps to Get Started</h4>
+<h3>1. Introdaction</h3>
+<h3>2. Front User</h3>
+<h3>3. Technical documentation</h3>
+<h3>4. Server</h3>
+<h3>5. Steps to Get Started</h3>
 <br>
 <br>
 
