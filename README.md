@@ -2,7 +2,7 @@
 <br>
 
 <br>
-<h1 Name="Tisch">:notebook_with_decorative_cover: Inhaltsverzeichnis</h1>
+<h1 Name="Tisch">:notebook_with_decorative_cover: Table of contents</h1>
 <h3>1. Introdaction</h3>
 <h3>2. Front User</h3>
 <h3>3. Technical documentation</h3>
@@ -81,6 +81,7 @@ Limited Sensor Range: The range of the sensors may not be sufficient for certain
 <br>
 **3.	Battery Life:**
 Power Consumption: The robot's battery life can be limited, especially when running multiple sensors, motors, and communication modules simultaneously. This may necessitate frequent recharging or battery replacement.<br>
+<br>
 **4.	Communication Latency and Reliability:**
 Wi-Fi Connectivity: Wi-Fi connections can be subject to latency and reliability issues, especially in environments with weak signal strength or interference from other devices.
 Bluetooth Range: Bluetooth communication is limited to short ranges, which may not be sufficient for some applications requiring long-distance control or data transmission.<br>
